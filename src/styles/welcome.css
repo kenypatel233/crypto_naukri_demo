@@ -8,8 +8,11 @@
 width: 426px;
 height: 108px;
 display: flex;
-background: #F5F9FF;
+background: #dbdfe4;
 vertical-align: middle;
+border: 1px solid #a1b3cb;
+border-radius: .2rem;
+
 }
 
 .userbutton:hover{
