@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './styles/home.css';
+import  Welcome from './components/Welcome'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+    <div className="splitScreen topPane" >
+     <div className = "overlay">
+      <blockquote className='quote-text'>The passage experienced a surge in popularity during the 1960s when the Letraset used it on
+      their dry transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</blockquote>
+      </div>
+      </div>
+
+      <div className="splitScreen bottomPane">
+      <div className='centered'>      
+      <Welcome> </Welcome>
+      </div>
+
+      </div>
+      </div>
+  
+    
+
   );
 }
 
